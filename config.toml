@@ -1,0 +1,44 @@
+languageCode = "en-us"
+title = "Adrià Galín"
+baseurl = "http://adriagalin.com/"
+theme = "aerial"
+googleAnalytics = "UA-65321718-1"
+
+
+[params]
+  name = "Adrià Galín"
+  description = "Adrià Galín website."
+	image = "android-icon-72x72.png"
+	apple_touch_icon = "apple-touch-icon.png"
+	mask_icon = "safari-pinned-tab.svg"
+	manifest =  "manifest.json"
+  about = "DevOps Engineer &nbsp;&bull;&nbsp; Backend Developer"
+  copyright = "2016 Adrià Galín Figueras. All rights reserved."
+  #Disable the scrolling background by entering any string for bg_scroll. Enable by leaving bg_scroll empty.
+  bg_scroll = ""
+  favicon = "favicon.ico"
+
+[[params.social]]
+  medium = "Twitter"
+  icon = "twitter"
+  link = "https://twitter.com/adriagalin"
+
+[[params.social]]
+  medium = "Linkedin"
+  icon = "linkedin"
+  link = "https://www.linkedin.com/in/adriagalinfigueras"
+
+[[params.social]]
+  medium = "Github"
+  icon = "github"
+  link = "https://github.com/adriagalin"
+
+[[params.social]]
+  medium = "Instagram"
+  icon = "instagram"
+  link = "https://www.instagram.com/adriagalin"
+
+[[params.social]]
+  medium = "Email"
+  icon = "envelope-o"
+  link = "mailto:hello@adriagalin.com?Subject=Web%20Contact"

@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: /README.txt
+Disallow: /LICENSE.txt

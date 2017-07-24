@@ -1,0 +1,18 @@
+FROM alpine:latest
+
+MAINTAINER Adria Galín - hello@adriagalin.com
+
+ENV HUGO_VERSION 0.25.1
+ENV HUGO_BINARY hugo_${HUGO_VERSION}_linux_amd64
+
+RUN apk add --update-cache curl tar && rm -rf rm -rf /var/cache/apk/*
+
+RUN curl -L https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz > ${HUGO_BINARY}.tar.gz \
+  && tar -xvzf ${HUGO_BINARY}.tar.gz \
+  && mv ${HUGO_BINARY}/${HUGO_BINARY} /usr/bin/hugo \
+	&& chmod +x /usr/bin/hugo \
+  && rm -rf ${HUGO_BINARY}.tar.gz
+
+WORKDIR /web
+
+CMD /usr/bin/hugo
